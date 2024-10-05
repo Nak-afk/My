@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -56,9 +57,15 @@
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
   <select id="idPiotSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showPilotSelect();document.getElementById('displayValuePilot').value=this.options[this.selectedIndex].text; document.getElementById('idPilot').value=this.options[this.selectedIndex].value;">
-    <option value="one">Бецик</option>
-    <option value="two">Отаман</option>
-    <option value="three">Дес</option>
+    <option value="1">Бецик</option>
+    <option value="2">Отаман</option>
+    <option value="3">Дес</option>
+    <option value="4">Жах</option>
+    <option value="5">Маестро</option>
+    <option value="6">Мрійник</option>
+    <option value="7">Ґарден</option>
+    <option value="8">Вепр</option>
+    <option value="9">Птаха</option>
   </select>
   <input type="text" name="displayValuePilot" id="displayValuePilot" onchange="showPilotFPV();"
          placeholder="Бецик" onfocus="this.select()"
@@ -72,9 +79,12 @@
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
   <select id="idTipCiliSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showTipCiliSelect();document.getElementById('displayValueTipViyavlCili').value=this.options[this.selectedIndex].text; document.getElementById('idTipViyavlCili').value=this.options[this.selectedIndex].value;">
-    <option value="one">Орлан</option>
-    <option value="two">Орлан-10</option>
-    <option value="three">Орлан-30</option>
+    <option value="1">Орлан</option>
+    <option value="2">Орлан-10</option>
+    <option value="3">Орлан-30</option>
+    <option value="4">Зала</option>
+    <option value="5">Суперкам</option>
+    <option value="6">Невідомий</option>
   </select>
   <input type="text" name="displayValueTipViyavlCili" id="displayValueTipViyavlCili" onchange="showTipCiliFPV();"
          placeholder="Орлан" onfocus="this.select()"
@@ -228,9 +238,13 @@
 <div style="width:700px;height:25px;border:0;padding:0;margin:0;">
   <select id="idPrimitkiSelect" style="left:0px;width:700px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showPrimitkiSelect(); document.getElementById('displayValuePrimitki').value=this.options[this.selectedIndex].text; document.getElementById('idPrimitki').value=this.options[this.selectedIndex].value;">
-    <option value="1">Втрата керування</option>
-    <option value="2">Не знайшли візуально ціль</option>
-    <option value="3">Сіла батарейка</option>
+    <option value="1">Втрата керування.</option>
+    <option value="2">Втрата відео та керування.</option>
+    <option value="3">Не знайшли візуально ціль.</option>
+    <option value="4">Сіла батарейка.</option>
+    <option value="5">RX LOSS біля цілі.</option>
+    <option value="6">Не наздогнали ціль.</option>
+    <option value="7">Не наздогнали ціль, сіла батарея.</option>
   </select>
   <input type="text" name="displayValuePrimitki" id="displayValuePrimitki"  onchange="showPrimitki();"
          placeholder="Втрата керування" onfocus="this.select()"
@@ -450,7 +464,7 @@
 		"\nЧас: " + chas
 		+ "\nВУРЛР"
 		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -466,7 +480,7 @@
 		"\nЧас: " + chas
 		+ "\nВУРЛР"
 		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -485,7 +499,7 @@
 		"\nЧас: " + chas
 		+ "\nВУРЛР"
 		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -504,7 +518,7 @@
 		"\nЧас: " + chas
 		+ "\nВУРЛР"
 		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
