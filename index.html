@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -21,16 +20,16 @@
 <p></p>
 
 <label style='font-size: 18px; font-weight:bold;' for="start">Позиція: </label
-<div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idSelectPozicia" style="left:0px;width:300px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+<div style="width:250px;height:25px;border:0;padding:0;margin:0;">
+  <select id="idSelectPozicia" style="left:0px;width:350px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showPoziciaSelect();document.getElementById('displayValuePosizia').value=this.options[this.selectedIndex].text; document.getElementById('idPosizia').value=this.options[this.selectedIndex].value;">
-    <option value="one">"Короїд" (37U DQ 99999 99999)</option>
-    <option value="two">"Айова" (37U DQ 99999 99999)</option>
-    <option value="three">"Конго" (37U DQ 99999 99999)</option>
+    <option value="one">"СП Короїд" (37U DQ 99999 99999)</option>
+    <option value="two">"СП Айова" (37U DQ 99999 99999)</option>
+    <option value="three">"СП Конго" (37U DQ 99999 99999)</option>
   </select>
   <input type="text" name="displayValuePosizia" id="displayValuePosizia" onchange="showPozicia();"
-         placeholder="Короїд" (37U DQ 99999 99999)" onfocus="this.select()"
-         style="position:relative;left:-304px;top:0px;width:270px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         placeholder="СП Короїд" (37U DQ 99999 99999)" onfocus="this.select()"
+         style="position:relative;left:-354px;top:0px;width:320px;width:330px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
   <input name="idPosizia" id="idPosizia" type="hidden">
 </div>
 
@@ -255,12 +254,16 @@
 
 <p></p>
 
+<input type="text" onchange="showOsobSklad();" style="width:700px; font-size: 18px; font-weight:bold;" id="osobSklad" name="fname" value="о/с (Сірий, Білий, Полосатий, Кабінет)"><br><br>
+
+<p></p>
+
 <textarea wrap="soft" id="dopovid" name="name" style="word-wrap: break-word; word-break: break-all; width:900px; height:427px;font-size: 18px; font-weight:bold;"> Доповідь </textarea>
 	  
       <script>
 		var data = '05.10.2024';
 		var chas = '22:06';
-		var pozicia = 'Короїд" (37U DQ 99999 99999)';
+		var pozicia = 'СП Короїд" (37U DQ 99999 99999)';
 		var pidrozdilFPV = '1МБ';
 		var pilot = 'Бецик';
 		var tipCili = 'Орлан';
@@ -273,9 +276,10 @@
 		var koordinatyPidrivu = '37 QC 12345 12345';
 		var cityViyavlenya = 'Донецьк';
 		var cityPidrivu = 'Донецьк';
+		var osobSkladValue = 'о/с (Сірий, Білий, Полосатий, Кабінет)';
 		var allertShow = 0;
 	  
-		document.getElementById('displayValuePosizia').value = 'Короїд" (37U DQ 99999 99999)';
+		document.getElementById('displayValuePosizia').value = 'СП Короїд" (37U DQ 99999 99999)';
 		document.getElementById('displayValuePidrozdilFPV').value = '1МБ';
 		document.getElementById('displayValuePilot').value = 'Бецик';
 		document.getElementById('displayValueTipViyavlCili').value = 'Орлан';
@@ -415,6 +419,11 @@
 			var text = e.options[e.selectedIndex].text;
 			primitki = text;
 			generateDopovid();
+		}		
+		function showOsobSklad(){////змінили тип цілі вибором зі списку
+			
+			osobSkladValue = document.getElementById('osobSklad').value;
+			generateDopovid();
 		}
 
 
@@ -471,7 +480,8 @@
 		+ "\nВитрати:(" + tipFpv + ")"
 		+ "\nДрон повернуто."
 		+ "\nЦіль не знищена."
-		+ "\nПричина: " + primitki;
+		+ "\nПричина: " + primitki
+		+ "\n" + osobSkladValue;
 		//alert(message);
 		}
 		
@@ -489,7 +499,8 @@
 		+ "\n- 1 заряд М112 (С4)."
 		+ "\n- 1 шт ЕД-8-Ж-1М"
 		+ "\nЦіль не знищена. Дрон втрачено р-н " + cityPidrivu + " (" + koordinatyPidrivu + ")"
-		+ "\nПричина: " + primitki;
+		+ "\nПричина: " + primitki
+		+ "\n" + osobSkladValue;
 		//alert(message);
 			
 		}
@@ -508,7 +519,8 @@
 		+ "\n- 1 заряд М112 (С4)."
 		+ "\n- 1 шт ЕД-8-Ж-1М"
 		+ "\nЦіль не знищена. Дрон підірвано р-н " + cityPidrivu + " (" + koordinatyPidrivu + ")"
-		+ "\nПричина: " + primitki;
+		+ "\nПричина: " + primitki
+		+ "\n" + osobSkladValue;
 		//alert(message);
 		
 		}
@@ -526,7 +538,8 @@
 		+ "\n- FPV 1шт."
 		+ "\n- 1 заряд М112 (С4)."
 		+ "\n- 1 шт ЕД-8-Ж-1М"
-		+ "\nЦіль знищена. р-н " + cityPidrivu + " (" + koordinatyPidrivu + ")";
+		+ "\nЦіль знищена. р-н " + cityPidrivu + " (" + koordinatyPidrivu + ")"
+		+ "\n" + osobSkladValue;
 		
 		if (allertShow == 0){
 		alert('Ти не забув змінити час на час знищення?!?!?!?!?!');
