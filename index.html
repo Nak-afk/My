@@ -23,12 +23,12 @@
 <div style="width:250px;height:25px;border:0;padding:0;margin:0;">
   <select id="idSelectPozicia" style="left:0px;width:350px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showPoziciaSelect();document.getElementById('displayValuePosizia').value=this.options[this.selectedIndex].text; document.getElementById('idPosizia').value=this.options[this.selectedIndex].value;">
-    <option value="one">"СП Короїд" (37U DQ 99999 99999)</option>
-    <option value="two">"СП Айова" (37U DQ 99999 99999)</option>
-    <option value="three">"СП Конго" (37U DQ 99999 99999)</option>
+    <option value="one">"Короїд" (37U DQ 99999 99999)</option>
+    <option value="two">"Айова" (37U DQ 99999 99999)</option>
+    <option value="three">"Конго" (37U DQ 99999 99999)</option>
   </select>
   <input type="text" name="displayValuePosizia" id="displayValuePosizia" onchange="showPozicia();"
-         placeholder="СП Короїд" (37U DQ 99999 99999)" onfocus="this.select()"
+         placeholder="Короїд" (37U DQ 99999 99999)" onfocus="this.select()"
          style="position:relative;left:-354px;top:0px;width:320px;width:330px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
   <input name="idPosizia" id="idPosizia" type="hidden">
 </div>
@@ -39,13 +39,13 @@
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
   <select id="idPidrozdilFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
           onchange="showPidrozdilFPVSelect();document.getElementById('displayValuePidrozdilFPV').value=this.options[this.selectedIndex].text; document.getElementById('idPidrozdilFPV').value=this.options[this.selectedIndex].value;">
-    <option value="1">1МБ</option>
-    <option value="2">2МБ</option>
-    <option value="3">2ЗРБатр</option>
-    <option value="3">2ШБ</option>
+    <option value="1">зрадн</option>
+    <option value="2">зрадн/2мб</option>
+    <option value="3">зрадн/2зрбатр</option>
+    <option value="3">зрадн/2шб</option>
   </select>
   <input type="text" name="displayValuePidrozdilFPV" id="displayValuePidrozdilFPV" onchange="showPidrozdilFPV();"
-         placeholder="1МБ" onfocus="this.select()"
+         placeholder="зрадн" onfocus="this.select()"
          style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
   <input name="idPidrozdilFPV" id="idPidrozdilFPV" type="hidden">
 </div>
@@ -263,8 +263,8 @@
       <script>
 		var data = '05.10.2024';
 		var chas = '22:06';
-		var pozicia = 'СП Короїд" (37U DQ 99999 99999)';
-		var pidrozdilFPV = '1МБ';
+		var pozicia = 'Короїд" (37U DQ 99999 99999)';
+		var pidrozdilFPV = 'зрадн';
 		var pilot = 'Бецик';
 		var tipCili = 'Орлан';
 		var visotaCili = '2100';
@@ -279,8 +279,8 @@
 		var osobSkladValue = 'о/с (Сірий, Білий, Полосатий, Кабінет)';
 		var allertShow = 0;
 	  
-		document.getElementById('displayValuePosizia').value = 'СП Короїд" (37U DQ 99999 99999)';
-		document.getElementById('displayValuePidrozdilFPV').value = '1МБ';
+		document.getElementById('displayValuePosizia').value = 'Короїд" (37U DQ 99999 99999)';
+		document.getElementById('displayValuePidrozdilFPV').value = 'зрадн';
 		document.getElementById('displayValuePilot').value = 'Бецик';
 		document.getElementById('displayValueTipViyavlCili').value = 'Орлан';
 		document.getElementById('displayValueVisotaCili').value = '2100';
@@ -472,9 +472,8 @@
 		var message = 
 		data +
 		"\nЧас: " + chas
-		+ "\nВУРЛР"
-		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nСП зрадн " + pozicia
+		+ "\n"+ pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з реб 3 ошбр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -489,9 +488,8 @@
 		var message = 
 		data +
 		"\nЧас: " + chas
-		+ "\nВУРЛР"
-		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nСП зрадн " + pozicia
+		+ "\n"+ pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з реб 3 ошбр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -509,9 +507,8 @@
 		var message = 
 		data +
 		"\nЧас: " + chas
-		+ "\nВУРЛР"
-		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nСП зрадн " + pozicia
+		+ "\n"+ pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з реб 3 ошбр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
@@ -529,9 +526,8 @@
 		var message = 
 		data +
 		"\nЧас: " + chas
-		+ "\nВУРЛР"
-		+ "\nВП зрадн " + pozicia
-		+ "\nВУРЛР і " + pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з РЕБ 3 ОШБр"
+		+ "\nСП зрадн " + pozicia
+		+ "\n"+ pidrozdilFPV + " (FPV пілот " + pilot + " )  у взаємодії з реб 3 ошбр"
 		+ "\nПодія: виявлено БпЛА тип «" + tipCili + "» р-н " + cityViyavlenya + " (" + koordinatyViyavlenya + "), вис. - " + visotaCili + "."
 		+ "\nСпроба ураження за допомогою FPV " + rozmirFpv
 		+ "\nВитрати:(" + tipFpv + ")"
