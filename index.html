@@ -570,14 +570,14 @@
           // Creating a map object
         var map = new L.map('map', mapOptions);
         // Creating a Layer object
-		//var layer2 = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-        var layer = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
-	minZoom: 0,
-	maxZoom: 20,
-	//accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
-	attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'jpg'
-});
+		var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        //var layer = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
+	//minZoom: 0,
+	//maxZoom: 20,
+	/////Ce maye buty zakomentovano - accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
+	//attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	//ext: 'jpg'
+//});
 		
 		//http://c.sm.mapstack.stamen.com/toner-hybrid/{z}/{x}/{y}.png
         // Adding layer to the map
@@ -613,14 +613,14 @@
           // Creating a map object
         var map2 = new L.map('map2', mapOptions2);
         // Creating a Layer object
-        //var layer2 = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-        var layer2 = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
-	minZoom: 0,
-	maxZoom: 20,
-	//accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
-	attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'jpg'
-});
+        var layer2 = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        //var layer2 = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
+	//minZoom: 0,
+	//maxZoom: 20,
+	/////Ce maye buty zakomentovano - accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
+	//attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	//ext: 'jpg'
+//});
         // Adding layer to the map
         map2.addLayer(layer2);
 		
