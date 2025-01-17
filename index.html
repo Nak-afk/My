@@ -12,16 +12,16 @@
 <body>
   <p>Значення можна змінювати якщо їх немає у випадаючому списку!!!!!</p>
   <form>
-    <label style='font-size: 18px; font-weight:bold;' for="start">Дата та час: </label>
-    <input type="date" id="start" name="trip-start" style='font-size: 18px; font-weight:bold;' onchange="show111();"/>
-    <input type="time" id="appt" name="appt" style='font-size: 18px; font-weight:bold;' onchange="showTime();"/>
+    <label style='font-size: 16px; font-weight:bold;' for="start">Дата та час: </label>
+    <input type="date" id="start" name="trip-start" style='font-size: 16px; font-weight:bold;' onchange="show111();"/>
+    <input type="time" id="appt" name="appt" style='font-size: 16px; font-weight:bold;' onchange="showTime();"/>
    <form>
 	
 <p></p>
 
-<label style='font-size: 18px; font-weight:bold;' for="start">Позиція: </label
+<label style='font-size: 16px; font-weight:bold;' for="start">Позиція: </label
 <div style="width:250px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idSelectPozicia" style="left:0px;width:350px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idSelectPozicia" style="left:0px;width:350px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showPoziciaSelect();document.getElementById('displayValuePosizia').value=this.options[this.selectedIndex].text; document.getElementById('idPosizia').value=this.options[this.selectedIndex].value;">
     <option value="one">"Короїд" (37U DQ 99999 99999)</option>
     <option value="two">"Айова" (37U DQ 99999 99999)</option>
@@ -29,17 +29,15 @@
   </select>
   <input type="text" name="displayValuePosizia" id="displayValuePosizia" onchange="showPozicia();"
          placeholder="Короїд" (37U DQ 99999 99999)" onfocus="this.select()"
-         style="position:absolute; left:85px;top:96px;width:320px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:absolute; left:76px;top:93px;width:320px;height:23px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idPosizia" id="idPosizia" type="hidden">
 </div>
 
-
-
 <p></p>
 
-<label style='font-size: 18px; font-weight:bold;' for="start">Підрозділ FPV: </label
+<label style='font-size: 16px; font-weight:bold;' for="start">Підрозділ FPV: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idPidrozdilFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idPidrozdilFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showPidrozdilFPVSelect();document.getElementById('displayValuePidrozdilFPV').value=this.options[this.selectedIndex].text; document.getElementById('idPidrozdilFPV').value=this.options[this.selectedIndex].value;">
     <option value="1">зрадн</option>
     <option value="2">зрадн/2мб</option>
@@ -48,16 +46,16 @@
   </select>
   <input type="text" name="displayValuePidrozdilFPV" id="displayValuePidrozdilFPV" onchange="showPidrozdilFPV();"
          placeholder="зрадн" onfocus="this.select()"
-         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idPidrozdilFPV" id="idPidrozdilFPV" type="hidden">
 </div>
 
 
 <p></p>
 
-<label style='font-size: 18px; font-weight:bold;' for="start">Пілот: </label
+<label style='font-size: 16px; font-weight:bold;' for="start">Пілот: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idPiotSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idPiotSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showPilotSelect();document.getElementById('displayValuePilot').value=this.options[this.selectedIndex].text; document.getElementById('idPilot').value=this.options[this.selectedIndex].value;">
     <option value="1">Бецик</option>
     <option value="2">Отаман</option>
@@ -71,15 +69,15 @@
   </select>
   <input type="text" name="displayValuePilot" id="displayValuePilot" onchange="showPilotFPV();"
          placeholder="Бецик" onfocus="this.select()"
-         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:relative;left:-204px;top:-1px;width:170px;width:280px\9;#width:280px;height:23px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idPilot" id="idPilot" type="hidden">
 </div>
 
 <p></p>
 
-<label style='font-size: 18px; font-weight:bold;' for="start">Тип виявленної цілі: </label
+<label style='font-size: 16px; font-weight:bold;' for="start">Тип виявленної цілі: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idTipCiliSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idTipCiliSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showTipCiliSelect();document.getElementById('displayValueTipViyavlCili').value=this.options[this.selectedIndex].text; document.getElementById('idTipViyavlCili').value=this.options[this.selectedIndex].value;">
     <option value="1">Орлан</option>
     <option value="2">Орлан-10</option>
@@ -90,17 +88,19 @@
   </select>
   <input type="text" name="displayValueTipViyavlCili" id="displayValueTipViyavlCili" onchange="showTipCiliFPV();"
          placeholder="Орлан" onfocus="this.select()"
-         style="position:absolute;left:179px;top:225px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:absolute;left:162px;top:223px;width:170px;width:280px\9;#width:280px;height:23px; border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idTipViyavlCili" id="idTipViyavlCili" type="hidden">
 </div>
 
 	 <p></p> 
 	  
   <div class="box" style="display:flex;">
-    <div><label style='font-size: 18px; font-weight:bold;' for="start">Координати виявлення: </label></div>
-    <div><input type="text" id="CQ" placeholder="Тицьни на карту" style='font-size: 18px; font-weight:bold;'></div>
-    <div><label style='font-size: 18px; font-weight:bold;' for="start"> Район виявлення: </label></div>
-    <div><input type="text" id="CQ222" placeholder="Тицьни на карту" style='font-size: 18px; font-weight:bold;'></div>
+    <div><label style='font-size: 16px; font-weight:bold;' for="start">Координати виявлення: </label></div>
+    <div><input type="text" id="CQ" placeholder="Тицьни на карту" style='font-size: 16px; font-weight:bold;'></div>
+  </div>
+  <div class="box" style="display:flex;">
+    <div><label style='font-size: 16px; font-weight:bold;' for="start"> Район виявлення: </label></div>
+    <div><input type="text" id="CQ222" placeholder="Тицьни на карту" style='font-size: 16px; font-weight:bold;'></div>
   </div>
 
   <div class="box" style="display:flex;">
@@ -108,14 +108,14 @@
 <div><input type="text" id="longitude" placeholder="longitude" style='font-size: 10px; font-weight:bold;'></div>
   </div>
   
-      <div class="mapMy" id="map" style="width: 900px; height: 480px"></div>
+      <div class="mapMy" id="map" style="width: 700px; height: 480px"></div>
 	    
 <p></p>
 
   <div class="box" style="display:flex;">
-    <div><label style='font-size: 18px; font-weight:bold;' for="start">Висота цілі: </label
+    <div><label style='font-size: 16px; font-weight:bold;' for="start">Висота цілі: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idVisotaCiliSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idVisotaCiliSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showVisotaCiliSelect();document.getElementById('displayValueVisotaCili').value=this.options[this.selectedIndex].text; document.getElementById('idVisotaCili').value=this.options[this.selectedIndex].value;">
     <option value="1">500</option>
     <option value="2">600</option>
@@ -169,15 +169,15 @@
   </select>
   <input type="text" name="displayValueVisotaCili" id="displayValueVisotaCili"  onchange="showVisotaCiliFPV();"
          placeholder="2100" onfocus="this.select()"
-         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idVisotaCili" id="idVisotaCili" type="hidden">
 </div></div>
 
 <p></p>
 
-    <div><label style='font-size: 18px; font-weight:bold;' for="start">Розмір FPV: </label
+    <div><label style='font-size: 16px; font-weight:bold;' for="start">Розмір FPV: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idRozmirFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idRozmirFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showRozmirFPVSelect(); document.getElementById('displayValueRozmirFPV').value=this.options[this.selectedIndex].text; document.getElementById('idRozmirFPV').value=this.options[this.selectedIndex].value;">
     <option value="one">10</option>
     <option value="two">8</option>
@@ -185,48 +185,49 @@
   </select>
   <input type="text" name="displayValueRozmirFPV" id="displayValueRozmirFPV" onchange="showVRozmirFPV();"
          placeholder="10" onfocus="this.select()"
-         style="position:relative;left:-204px;top:-2px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:relative;left:-204px;top:-2px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idRozmirFPV" id="idRozmirFPV" type="hidden">
 </div></div>
 
 <p></p>
 
-    <div><label style='font-size: 18px; font-weight:bold;' for="start">Тип FPV: </label</div>
+    <div><label style='font-size: 16px; font-weight:bold;' for="start">Тип FPV: </label
 <div style="width:200px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idTipFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+  <select id="idTipFPVSelect" style="left:0px;width:200px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showTipFPVSelect(); document.getElementById('displayValueTipFPV').value=this.options[this.selectedIndex].text; document.getElementById('idTipFPV').value=this.options[this.selectedIndex].value;">
     <option value="one">Денний</option>
     <option value="two">Нічний</option>
     <option value="three">Цифровий</option>
   </select>
-</div>
-
   <input type="text" name="displayValueTipFPV" id="displayValueTipFPV" onchange="showTipFPV();"
          placeholder="Денний" onfocus="this.select()"
-         style="position:relative;left:0px;top:-25px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:relative;left:-204px;top:0px;width:170px;width:280px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idTipFPV" id="idTipFPV" type="hidden">
+</div></div>
 
 <p></p>
 
-		<label style='font-size: 18px; font-weight:bold;' for="start">Результат: </label>
-		<input style='position:relative; height: 25px; width: 25px; top:6px;' type="radio" name="tab" value="igotnone" onclick="show1();" />
-		<label style='font-size: 18px; font-weight:bold;'for="111">Дрон повернуто</label>
-		<input style='position:relative; height: 25px; width: 25px; top:6px;' type="radio" name="tab" value="igottwo" onclick="show2();" />
-		<label style='font-size: 18px; font-weight:bold;'for="222">Дрон втрачено</label>
-		<input style='position:relative; height: 25px; width: 25px; top:6px;' type="radio" name="tab" value="igotthre" onclick="show3();" />
-		<label style='font-size: 18px; font-weight:bold;'for="222">Дрон підірвано</label>
-		<input style='position:relative; height: 25px; width: 25px; top:6px;' type="radio" name="tab" value="igotfour" onclick="show4();" />
-		<label style='font-size: 18px; font-weight:bold;'for="222">Ціль знищена</label>
+		<label style='font-size: 16px; font-weight:bold;' for="start">Результат: </label>
+		<input style='position:relative; height: 22px; width: 22px; top:6px;' type="radio" name="tab" value="igotnone" onclick="show1();" />
+		<label style='font-size: 16px; font-weight:bold;'for="111">Дрон повернуто</label>
+		<input style='position:relative; height: 22px; width: 22px; top:6px;' type="radio" name="tab" value="igottwo" onclick="show2();" />
+		<label style='font-size: 16px; font-weight:bold;'for="222">Дрон втрачено</label>
+		<input style='position:relative; height: 22px; width: 22px; top:6px;' type="radio" name="tab" value="igotthre" onclick="show3();" />
+		<label style='font-size: 16px; font-weight:bold;'for="222">Дрон підірвано</label>
+		<input style='position:relative; height: 22px; width: 22px; top:6px;' type="radio" name="tab" value="igotfour" onclick="show4();" />
+		<label style='font-size: 16px; font-weight:bold;'for="222">Ціль знищена</label>
 
 	 <p></p>
 	 
 <table id="CoordPodrivu">
     <tbody>
     <tr>
-        <td><div><label style='font-size: 18px; font-weight:bold;' for="start">Координати підриву(втрати): </label></div></td>
-        <td><div><input type="text" id="CQ2" placeholder="Тицьни на карту" style='font-size: 18px; font-weight:bold;'></div></td>
-        <td><div><label style='font-size: 18px; font-weight:bold;' for="start"> Район: </label></div></td>
-		<td><div><input type="text" id="CQ333" placeholder="Тицьни на карту" style='font-size: 18px; font-weight:bold;'></div></td>
+        <td><div><label style='font-size: 16px; font-weight:bold;' for="start">Координати підриву(втрати): </label></div></td>
+        <td><div><input type="text" id="CQ2" placeholder="Тицьни на карту" style='font-size: 16px; font-weight:bold;'></div></td>
+	   </tr>
+	<tr>
+        <td><div><label style='font-size: 16px; font-weight:bold;' for="start"> Район: </label></div></td>
+		<td><div><input type="text" id="CQ333" placeholder="Тицьни на карту" style='font-size: 16px; font-weight:bold;'></div></td>
     </tr>
     <tr>
         <td><div><input type="text" id="latitude2" placeholder="latitude" style='font-size: 10px; font-weight:bold;'></div></td>
@@ -235,11 +236,11 @@
     </tbody>
 </table>
 	  
-      <div class="mapMy" id="map2" style="width: 900px; height: 480px"></div>
+      <div class="mapMy" id="map2" style="width: 700px; height: 480px"></div>
 		
-    <div id="idPrimitkiShowHide"><label style='font-size: 18px; font-weight:bold;' for="start">Примітки: </label
-style="width:700px;height:25px;border:0;padding:0;margin:0;">
-  <select id="idPrimitkiSelect" style="left:0px;width:700px; height:27px;line-height:18px;margin:0;padding:0; font-size: 18px; font-weight:bold;"
+    <div id="idPrimitkiShowHide"><label style='font-size: 16px; font-weight:bold;' for="start">Примітки: </label
+<div style="width:700px;height:25px;border:0;padding:0;margin:0;">
+  <select id="idPrimitkiSelect" style="left:0px;width:500px; height:27px;line-height:18px;margin:0;padding:0; font-size: 16px; font-weight:bold;"
           onchange="showPrimitkiSelect(); document.getElementById('displayValuePrimitki').value=this.options[this.selectedIndex].text; document.getElementById('idPrimitki').value=this.options[this.selectedIndex].value;">
     <option value="1">Втрата керування.</option>
     <option value="2">Втрата відео та керування.</option>
@@ -250,20 +251,20 @@ style="width:700px;height:25px;border:0;padding:0;margin:0;">
     <option value="7">Не наздогнали ціль, сіла батарея.</option>
   </select>
 
-</div>
-
+	  
   <input type="text" name="displayValuePrimitki" id="displayValuePrimitki"  onchange="showPrimitki();"
          placeholder="Втрата керування" onfocus="this.select()"
-         style="position:relative;left:90px;top:-25px;width:670px;width:780px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 18px; font-weight:bold;"  >
+         style="position:absolute;left:88px;top:1565px;width:470px;width:780px\9;#width:280px;height:23px; height:21px\9;#height:18px;border:1px solid #556; font-size: 16px; font-weight:bold;"  >
   <input name="idPrimitki" id="idPrimitki" type="hidden">
+</div></div>
 
 <p></p>
 
-<input type="text" onchange="showOsobSklad();" style="width:700px; font-size: 18px; font-weight:bold;" id="osobSklad" name="fname" value="о/с (Сірий, Білий, Полосатий, Кабінет)"><br><br>
+<input type="text" onchange="showOsobSklad();" style="width:700px; font-size: 16px; font-weight:bold;" id="osobSklad" name="fname" value="о/с (Сірий, Білий, Полосатий, Кабінет)"><br><br>
 
 <p></p>
 
-<textarea wrap="soft" id="dopovid" name="name" style="word-wrap: break-word; word-break: break-all; width:900px; height:427px;font-size: 18px; font-weight:bold;"> Доповідь </textarea>
+<textarea wrap="soft" id="dopovid" name="name" style="word-wrap: break-word; word-break: break-all; width:700px; height:427px;font-size: 15px; font-weight:bold;"> Доповідь </textarea>
 	  
       <script>
 		var data = '05.10.2024';
@@ -570,16 +571,7 @@ style="width:700px;height:25px;border:0;padding:0;margin:0;">
           // Creating a map object
         var map = new L.map('map', mapOptions);
         // Creating a Layer object
-		var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-        //var layer = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
-	//minZoom: 0,
-	//maxZoom: 20,
-	/////Ce maye buty zakomentovano - accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
-	//attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	//ext: 'jpg'
-//});
-		
-		//http://c.sm.mapstack.stamen.com/toner-hybrid/{z}/{x}/{y}.png
+        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
         // Adding layer to the map
         map.addLayer(layer);
 		
@@ -614,13 +606,6 @@ style="width:700px;height:25px;border:0;padding:0;margin:0;">
         var map2 = new L.map('map2', mapOptions2);
         // Creating a Layer object
         var layer2 = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-        //var layer2 = new L.TileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=ea23bcdd-a477-4f61-b506-a97508664ef3', {
-	//minZoom: 0,
-	//maxZoom: 20,
-	/////Ce maye buty zakomentovano - accessToken: 'Stadia-Auth ea23bcdd-a477-4f61-b506-a97508664ef3',
-	//attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	//ext: 'jpg'
-//});
         // Adding layer to the map
         map2.addLayer(layer2);
 		
